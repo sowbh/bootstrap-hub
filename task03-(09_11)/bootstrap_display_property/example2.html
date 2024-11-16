@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap- 4.Display property with breakpoints(2)</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body class="container-fluid">
+    <!-- initially, flex-column
+    flex-sm-column = when small screen then flex-column
+    flex-md-row = when medium screen then flex row -->
+
+    <div class="border border-2 p-3 mt-5 fs-1 border-warning d-flex flex-column flex-sm-column gap-3 flex-md-row">
+        <!-- see here, instead of writing border border-2 all the time in all spans then in this case we can use css(currently didn't used) -->
+        <span class="border border-2 p-3 d-inline-block">Item-1</span>
+        <span class="border border-2 p-3 d-inline-block">Item-2</span>
+        <span class="border border-2 p-3 d-inline-block">Item-3</span>
+        <span class="border border-2 p-3 d-inline-block">Item-4</span>
+        <span class="border border-2 p-3 d-inline-block">Item-5</span>
+    </div>
+</body>
+</html>

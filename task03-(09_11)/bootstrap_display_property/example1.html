@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap- 4.Display property with breakpoints(1)</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body class="container-fluid">
+    <!-- we can use this while building navbar -->
+    <!-- mt = margin-top, mb = margin-bottom -->
+
+    <!-- d-none = display: none; 
+    d-md-flex = when medium screen then display: flex; 
+    d-lg-block = when large screen then display: block; 
+    gap-3 = gap property;
+    d-sm-inline-block = when small screen then display: inline-block; -->
+
+    <div class="border border-2 border-primary mt-5 p-3 d-none d-sm-inline-block d-md-flex gap-3 d-lg-block">
+
+        <h1 class="border border-2 mb-3">Simple Responsive Container</h1>
+        <p class="border border-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rem hic libero, corrupti blanditiis cupiditate similique at sunt voluptates voluptatum? Nobis illo ea dolores eveniet quasi, nostrum fuga quas voluptatibus.</p>
+
+    </div>
+
+    <!-- make it visible only at screens < small -->
+    <div class="border border-3 p-3 fs-1 mt-5 d-sm-none d-md-none d-lg-none">
+        I am hidden initially
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-8.Carousels</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body class="container-fluid">
+    <!-- carousel syntax -->
+    <div class="carousel slide" data-bs-ride="carousel" data-bs-theme="light" id="banners">
+        <div class="carousel-inner">
+            <!-- write data/image inside carousel-item -->
+            <!-- always make first/any carousel-item active -->
+            <!-- data-bs-interval = time in ms -->
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d9290fb51138d286.png?q=20" alt="Image 1" class="d-block w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="500">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/1e31c9d65e3b4592.jpg?q=20" alt="Image 2" class="d-block w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/de86b2f886de72d8.jpg?q=20" alt="Image 3" class="d-block w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/0b65fb95bf7e3b1c.jpeg?q=20" alt="Image 4" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- prev and next -->
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banners">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+    
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        
+        <!-- indicators -->
+        <div class="carousel-indicators">
+            <button class="active" data-bs-slide-to="0" data-bs-target="#banners"></button>
+            <button data-bs-slide-to="1" data-bs-target="#banners"></button>
+            <button data-bs-slide-to="2" data-bs-target="#banners"></button>
+            <button data-bs-slide-to="3" data-bs-target="#banners"></button>
+        </div>
+
+    </div>
+
+    <!-- including js(mandatory) -->
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

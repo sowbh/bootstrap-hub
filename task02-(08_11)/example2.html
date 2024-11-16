@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap- 2. Box-model</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- given separate height to parent container so that height property works well -->
+    <style>
+        .container-fluid{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <!-- container class, border class, border width class, border color class -->
+    <!-- my - top/bottom margin and mx - right/left margin -->
+    <!-- p - padding -->
+    <div class="container border border-3 border-danger my-3 mx-4 p-5">
+        <p>Hello there</p>
+    </div>
+    
+
+    <!-- mt - margin-top, w - width, h- height(here, both height and weight are in percentage which is dependent on parent container so provide separate height to parent container using css then height property works properly. by default width works fine) -->
+    <div class="container border border-2 border-dark mt-5 p-5 w-75 text-center fs-3 h-50 rounded rounded-pill">
+        <p>Hello there</p>
+    </div>
+
+    
+</body>
+</html>

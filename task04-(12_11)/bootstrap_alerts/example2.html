@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-6.Alerts(2)</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body class="container-fluid">
+    <!-- alert-dismissible = should be included while dismissing the alert
+    after this, build a relation between alert class and close button using data-bs-dismiss attribute -->
+    <div class="alert alert-primary alert-dismissible shadow fade show">
+        <h2 class="alert-heading">Login Summary</h2>
+        <hr>
+        <p class="m-0">Login Successful... Created using bootstrap alerts</p>
+        <a href="#" class="alert-link text-decoration-none">Register Here!</a>
+
+        <!-- data-bs-dismiss = "class_name" -> to build relationship between alert class and close button
+        if clicked on close then this alert disappears -->
+        <button class="btn btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
